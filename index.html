@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
+    <script src="./slider.js"></script>
 </head>
 <body>
     <div>
@@ -11,30 +12,6 @@
         <img src="./images/slider.jpg" id="slider" width="200px" height="100px" alt="">
         <button onclick="next()">Next</button>
     </div>
-
-    <script>
-        var images = ['./images/slider.jpg',
-    "./images/slider1.jpg",
-    "./images/slider2.jpg"];
-    var num = 0;
-    function next(){
-        var slider = document.getElementById('slider');
-        num++;
-        if(num >= images.length){
-            num = 0;
-        }
-        slider.src = images[num]
-    }
-
-    function prev(){
-        var slider = document.getElementById('slider');
-        num--;
-        if(num<0){
-            num = images.length-1;
-        }
-        slider.src = images[num]
-    }
-    </script>
     
 </body>
 </html>
